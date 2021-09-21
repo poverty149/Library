@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="book_owl.png"/>
+    <script src="Library.js" defer></script>
+    
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+        
+            <h1 class="title">Library</h1>
+            <nav>
+                <div class="dual-ring active" id="loadingRing"></div>
+                <div class="logged-out" id="loggedOut">
+                    <button class="btn btn-default" id="LogInBtn">Log In</button>
+                </div>
+                <div class="logged-in" id="loggedIn">
+                    <button class="btn btn-default" id="AcntBtn">Account</button>
+                    <button class="btn btn-default" id="LogoutBtn">Log Out</button>
+                </div>
+            </nav>
+        
+
+
+        </div>
+    </header>
+    <main class="main">
+        <button class="btn btn-default btn-large" id='addBookBtn'>Add Book</button>
+        <div class="books-grid" id="booksGrid"></div>
+    </main>
+    <footer>
+        <p>Copyright <span>&copy;</span> ParvathyUK</p> 
+        <a href="https://github.com/poverty149" target="_blank">
+        <i class="fab fa-github"></i></a>
+
+    </footer>
+    <div class="modal" id="addBookModal">
+        <form action="" class="add-book-form" id="addBookform">
+            <h3>Add Title</h3>
+            <input type="text" class="input" id="title" placeholder="Title" maxlength="50" required/><br>
+            <input type="text" class="input" id="author" placeholder="Author" maxlength="25" required/><br>
+            <input type="number" class="input" id="pages" placeholder="Number of pages" max="9999999" required/><br>
+            <div class="is_read">
+                <label>Have you read it?</label>
+                <input class="checkbox" type="checkbox" id="isread">
+
+            </div>
+            <button class="btn btn-green btn-medium" id="submitForm" type="submit">Submit</button>
+            
+        </form>
+    </div>
+    <div class="modal" id="accountModal"></div>
+    <div class="overlay" id="overlay"></div>
+    
+
+</body>
+</html>

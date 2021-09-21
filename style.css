@@ -1,0 +1,251 @@
+.add_book{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:100px;
+}
+
+body{
+    background-color: plum;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-wrap: break-word;
+    margin-bottom: 100px;
+    margin: 0px;
+    font-size: 30px;
+}
+h1{
+    font-family: cursive;
+    font-size: 80px;
+    color: white;
+    background-color:purple;
+    display: flex;
+    justify-content: stretch;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    
+    
+    
+}
+.btn{
+    background-color: grey;
+    border-radius: 10%;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    transition: transform 0.15s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.btn-light-green{
+    background-color:rgb(64, 199, 192)
+}
+.btn-light-red{
+    background-color:rgb(216, 115, 115);
+}
+.btn-mustard{
+    background-color:rgba(226, 196, 23, 0.986);
+}
+.btn-green{
+    background-color:green;
+}
+.btn-default:hover{
+    right:0;
+    background-color:rgb(206, 45, 206);
+    border:2px solid rgb(100, 24, 100) ;
+}
+.btn-default{
+    right:0;
+    background-color:rgb(77, 12, 77);
+    
+}
+.btn-medium{
+    padding:12px;
+    font-size: 25px;
+
+}
+.btn-large{
+    padding: 15px;
+    font-size: 40px;
+    background-color:rgb(121, 25, 121);
+    color: white;
+
+}
+.btn-large:hover{
+    background-color:rgb(148, 26, 148);
+    border:2px solid rgb(100, 24, 100) ;
+}
+footer{
+    background-color:purple;
+    bottom: 0;
+    left:0;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items:center;
+    font-size: 24px;
+    padding: 0px;
+    gap:10px;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+.fa-github {
+    color: grey;
+    font-size: 28px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
+.modal{
+
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    
+    width: 400px;
+    padding: 40px;
+    border: 2px solid #282a33;
+    border-radius: 10px;
+    background-color: rgb(211, 190, 190);
+    text-align:center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 90%;
+  }
+  
+input{
+    text-align: center;
+    
+}
+input[type='number'],
+input[type="text"]{
+cursor: text;
+}
+button,
+input{
+    font-size:large;
+    color: inherit;
+    font-family: inherit;
+    cursor: grab;
+}
+.input{
+    width: 90%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
+.checkbox {
+    width: 25px;
+    height: 25px;
+    margin-top: 13px;
+}
+.is-read{
+    display: flex;
+    gap: 20px;
+    
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  input:focus{
+      border-color: black;
+  }
+.logged-in,
+.logged-out{
+    display:none;
+    gap: 20px;
+    
+}
+.logged-in.active,
+.logged-out.active{
+    display: flex;
+}
+.books-grid{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap: 40px;
+   margin-top: 30px;
+}
+.book-card{
+    background-color:rgb(248, 191, 239);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(124, 12, 90);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border: 3px solid rgb(70, 11, 62);
+    border-radius:5px;
+    text-align: center;
+    margin-bottom: 50px ;
+    max-height: 500px;
+    max-width: 500px;
+}
+.book-card button{
+    position: inherit;
+    bottom: 5px;
+}
+.header{
+    border-bottom: 2px solid black;
+    background-color:purple;
+    width:100%;
+    margin: 0px;
+    left: 0;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: space-around;
+    margin: 0px;
+    background-color:purple;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+    
+}
+.main {
+    max-width: 1400px;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .title {
+    display: flex;
+   
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    line-height: 1;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+  
